@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+// import {RoundeEdgeDonut} from 'rounded-edge-donut'
+
 
 function App() {
   return (
@@ -10,15 +12,12 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      {/* <RoundeEdgeDonut chartData={{
+      labels: ['data1', 'data2', 'data3'],
+      colors: ['#ff253a', '#f4b710', '#2cb61be3'],
+      values: [76, 12, 12],
+    }}/> */}
     </div>
   );
 }
