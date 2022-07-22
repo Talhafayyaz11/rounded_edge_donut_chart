@@ -26,5 +26,5 @@ This project is extension of  [react-chart-j2](https://www.npmjs.com/package/rea
 
 ## Demo
 
-Insert gif or link to demo
+https://codesandbox.io/s/uetg19?file=/src/App.js
 
