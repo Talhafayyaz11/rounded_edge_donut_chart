@@ -44,6 +44,9 @@ const RoundeEdgeDonut  = ({
       },
     },
   },
+  width = 260,
+  height = 90,
+  className = ''
 }: {
   chartData: ChartData
   displayLegend?: boolean
@@ -51,6 +54,8 @@ const RoundeEdgeDonut  = ({
   legendPosition?: 'left' | 'right' | 'top' | 'bottom'
   options?: object
   width?: string | number
+  height?: string | number,
+  className: string
 }) => {
   const emptyData: ChartData = {
     colors: ['#d3d3d3'],
@@ -95,13 +100,13 @@ const RoundeEdgeDonut  = ({
       data={data}
       options={opts}
       redraw={false}
-      width={264}
-      height={90}
+      width={width}
+      height={height}
       plugins={plugin}
       style={{
         background: `transparent url('${icon}') no-repeat center 24px / 15%`,
       }}
-      className={'none'}
+      className={className}
     />
   )
 }

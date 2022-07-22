@@ -17,7 +17,9 @@ This project is extension of  [react-chart-j2](https://www.npmjs.com/package/rea
 |`icon`|`string`|''|`Url of icon to show inside donut`
 |`legendPosition`|`string`|`right`|`Position of legends`
 |`options`|`object`|`object`|`extra options that can be passed to donut chart`
-
+|`width`|`string or number` | `269`| `width of donut chart`
+|`height`|`string or number`|`90`|`height of donut chart`
+|`className`|`string`|`empty`|`className for donut`
 
 
 
