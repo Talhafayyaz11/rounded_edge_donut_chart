@@ -18,6 +18,10 @@ export const defaultChartData = {
 
 const RoundeEdgeDonut  = ({
   chartData = defaultChartData,
+  width = 500,
+  height = 500,
+  className = '',
+  redraw = true,
   displayLegend = false,
   icon,
   legendPosition = 'right',
@@ -43,11 +47,7 @@ const RoundeEdgeDonut  = ({
         },
       },
     },
-  },
-  width = 260,
-  height = 90,
-  className = '',
-  redraw = false,
+  }
 }: {
   chartData: ChartData
   displayLegend?: boolean
@@ -56,8 +56,8 @@ const RoundeEdgeDonut  = ({
   options?: object
   width?: string | number
   height?: string | number,
-  className: string,
-  redraw: boolean
+  className?: string,
+  redraw?: boolean
 }) => {
   const emptyData: ChartData = {
     colors: ['#d3d3d3'],
@@ -97,6 +97,7 @@ const RoundeEdgeDonut  = ({
   }
 
   return (
+      <div>
     <Doughnut
       id="roundedDoughnut"
       data={data}
@@ -105,11 +106,13 @@ const RoundeEdgeDonut  = ({
       width={width}
       height={height}
       plugins={plugin}
+      updateMode={"normal"}
       style={{
         background: `transparent url('${icon}') no-repeat center 24px / 15%`,
       }}
       className={className}
     />
+    </div>
   )
 }
 
