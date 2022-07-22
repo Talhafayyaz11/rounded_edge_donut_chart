@@ -20,6 +20,7 @@ This project is extension of  [react-chart-j2](https://www.npmjs.com/package/rea
 |`width`|`string or number` | `269`| `width of donut chart`
 |`height`|`string or number`|`90`|`height of donut chart`
 |`className`|`string`|`empty`|`className for donut`
+|`redraw`|`boolean`|`false`|`should chart redraw on prop change`
 
 
 

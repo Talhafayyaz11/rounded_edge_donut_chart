@@ -46,7 +46,8 @@ const RoundeEdgeDonut  = ({
   },
   width = 260,
   height = 90,
-  className = ''
+  className = '',
+  redraw = false,
 }: {
   chartData: ChartData
   displayLegend?: boolean
@@ -55,7 +56,8 @@ const RoundeEdgeDonut  = ({
   options?: object
   width?: string | number
   height?: string | number,
-  className: string
+  className: string,
+  redraw: boolean
 }) => {
   const emptyData: ChartData = {
     colors: ['#d3d3d3'],
@@ -99,7 +101,7 @@ const RoundeEdgeDonut  = ({
       id="roundedDoughnut"
       data={data}
       options={opts}
-      redraw={false}
+      redraw={redraw}
       width={width}
       height={height}
       plugins={plugin}
