@@ -4,10 +4,10 @@
 This project is extension of  [react-chart-j2](https://www.npmjs.com/package/react-chartjs-2) donut chart. This package provides nice little overlapping edges for donut chart with minimal third part dependecies.
 
  ## Screenshots
- ![App Screenshot](https://paste.pics/b283fa9413cf0dc24ba651b3f260905a)
+ ![App Screenshot](https://i2.paste.pics/b283fa9413cf0dc24ba651b3f260905a.png)
  with backgroundImage
  
- ![App Screenshot](https://paste.pics/3314730efcd7ed3875222d678ce82a7e)
+ ![App Screenshot](https://i2.paste.pics/3314730efcd7ed3875222d678ce82a7e.png)
 
 ## Usage/Examples
 
