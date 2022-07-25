@@ -1,6 +1,5 @@
 import { Doughnut } from 'react-chartjs-2'
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
-import merge from 'lodash/merge'
 import plugin from './DoughnutPlugins'
 
 ChartJS.register(ArcElement, Tooltip, Legend)
@@ -69,8 +68,8 @@ const RoundeEdgeDonut  = ({
   const chartDataNormalized: ChartData =
     totalValue === 0 ? emptyData : chartData
 
-  const opts = merge(
-    {
+  const opts = {
+    ...{
       maintainAspectRatio: false,
       responsive: false,
       legend: {
@@ -83,8 +82,9 @@ const RoundeEdgeDonut  = ({
         },
       },
     },
-    options
-  )
+    ...options
+  }
+
   const data = {
     labels: chartDataNormalized.labels,
     datasets: [
