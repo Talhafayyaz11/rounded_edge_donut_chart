@@ -20,6 +20,7 @@ const RoundeEdgeDonut  = ({
   width = 500,
   height = 500,
   className = '',
+  backgroundStyles = {},
   redraw = true,
   displayLegend = false,
   icon,
@@ -49,6 +50,7 @@ const RoundeEdgeDonut  = ({
   }
 }: {
   chartData: ChartData
+  backgroundStyles?: Object,
   displayLegend?: boolean
   icon?: string
   legendPosition?: 'left' | 'right' | 'top' | 'bottom'
@@ -95,7 +97,7 @@ const RoundeEdgeDonut  = ({
       },
     ],
   }
-
+console.log("zzz",backgroundStyles)
   return (
       <div>
     <Doughnut
@@ -108,7 +110,8 @@ const RoundeEdgeDonut  = ({
       plugins={plugin}
       updateMode={"normal"}
       style={{
-        background: `transparent url('${icon}') no-repeat center 24px / 15%`,
+        background: `transparent url('${icon}') no-repeat center ${parseInt(`${height}`) / 2 - 20}px / 50%`,
+        ...backgroundStyles
       }}
       className={className}
     />

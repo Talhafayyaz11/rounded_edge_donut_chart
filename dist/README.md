@@ -3,7 +3,11 @@
 
 This project is extension of  [react-chart-j2](https://www.npmjs.com/package/react-chartjs-2) donut chart. This package provides nice little overlapping edges for donut chart with minimal third part dependecies.
 
-
+ ## Screenshots
+ ![App Screenshot](https://paste.pics/b283fa9413cf0dc24ba651b3f260905a)
+ with backgroundImage
+ 
+ ![App Screenshot](https://paste.pics/3314730efcd7ed3875222d678ce82a7e)
 
 ## Usage/Examples
 
@@ -40,6 +44,7 @@ function App() {
 |`height`|`string or number`|`90`|`height of donut chart`
 |`className`|`string`|`empty`|`className for donut`
 |`redraw`|`boolean`|`false`|`should chart redraw on prop change`
+|`backgroundStyles`|`Object`|`{}`|`additional styles to be added to donut background. in order to control size of background image use backgroundStyles={backgroundSize: '20px'}`
 
 
 

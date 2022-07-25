@@ -4,8 +4,13 @@
   "author": "talhafayyaz",
   "keywords": [
     "react",
+    "ui",
     "components",
-    "ui"
+    "charts",
+    "react-chartjs-2",
+    "donut",
+    "overlapping",
+    "roundedEdges"
   ],
   "version": "0.10.0",
   "private": false,
