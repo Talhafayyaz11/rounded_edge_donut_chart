@@ -2,6 +2,7 @@
   "name": "rounded-edge-donut",
   "description": "Rounded Edge Donut chart",
   "author": "talhafayyaz",
+  "license": "MIT",
   "keywords": [
     "react",
     "ui",
